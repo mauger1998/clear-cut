@@ -40,6 +40,7 @@ header {
     width:100vw;
     padding-inline:4rem;
     padding-top:1rem;
+    background-color:rgba(255, 255, 255, 0.8);
 }
 .logo-container img {
     width:50px;
@@ -83,7 +84,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top:12rem;
+    padding-top:11rem;
 }
 .hero-wrapper {
     width:80vw;
@@ -116,4 +117,9 @@ nav ul li a {
 }
 .hero-button-wrapper p {
     width:50%;
+}
+/*************************/
+.hero-image-wrapper img {
+    width:70vw;
+    margin-top:2rem;
 }
