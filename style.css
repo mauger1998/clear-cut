@@ -50,6 +50,7 @@ nav {
     justify-content: center;
     align-items: center;
     width:50%;
+    padding-left:3rem;
 }
 nav ul {
     display:flex;
@@ -161,4 +162,13 @@ nav ul li a {
     .hero-wrapper h1 {
         font-size:2rem;
     }
+}
+/***************************/
+.why-us {
+    border:2px solid red;
+    width:100vw;
+    height:100vh;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
 }
