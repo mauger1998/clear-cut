@@ -1,0 +1,20 @@
+:root {
+    --dark-purple:#AB88FF;
+    --light-purple:#D8C8FF;
+    --green:#C2F557;
+}
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*************************
+Safari button reset
+*************************/
+button {
+    color:black;
+}
+/************************/
