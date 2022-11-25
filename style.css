@@ -79,8 +79,10 @@ nav ul li a {
     height:150vh;
     border:2px solid red;
     display:flex;
-    justify-content: center;
-    align-items: flex-start;
+    gap:1.5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     padding-top:12rem;
 }
 .hero-wrapper {
@@ -96,4 +98,22 @@ nav ul li a {
     font-family: 'Bowlby One SC', cursive;
     color:var(--dark-purple);
    
+}
+.hero-button-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+
+}
+.hero-button-wrapper button {
+    padding:0.5rem 2rem;
+    font-size:1.25rem;
+    color:white;
+    background-color:black;
+    font-weight:500;
+    border:none;
+}
+.hero-button-wrapper p {
+    width:50%;
 }
