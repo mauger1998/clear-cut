@@ -165,10 +165,71 @@ nav ul li a {
 }
 /***************************/
 .why-us {
-    border:2px solid red;
     width:100vw;
     height:100vh;
     text-align:center;
     display:flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:3rem;
+    
+}
+.why-us h2 {
+    width:60%;
+    font-size:2rem;
+
+}
+.why-us-titles {
+    display:flex;
+    justify-content: center;
+    align-items: center;;
+    flex-direction: column;
+}
+.why-us-cards {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    width:100vw;
+    height:50vh;
+    text-align:left;
+    
+    
+}
+.card {
+    padding:2rem;
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    justify-content: center;
+    align-items: flex-start;
+    width:24rem;
+    height:22rem;
+    padding-top:5rem;
+    border-radius:1em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position:relative;
+    
+    
+}
+.card:nth-child(2) {
+    padding-top:6.5rem;
+}
+.card:nth-child(3) {
+    padding-top:8rem;
+}
+.card:nth-child(3) img {
+    width:40px;
+}
+.card p {
+    width:90%;
+    line-height:2;
+    
+}
+.why-us img {
+    position:absolute;
+    width:50px;
+    top:10%;
+    left:10%;
 }
