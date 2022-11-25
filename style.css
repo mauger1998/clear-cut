@@ -25,3 +25,51 @@ body {
     color:black;
     height:1000vh;
 }
+
+main {
+    width:100vw;
+    height:1000vh;
+    color:black;
+    background-color:white;
+}
+/*****************************/
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    width:100vw;
+    padding-inline:4rem;
+    padding-top:1rem;
+}
+.logo-container img {
+    width:50px;
+}
+nav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+}
+nav ul {
+    display:flex;
+    list-style:none;
+    justify-content: space-evenly;
+    width:41rem;
+    
+    
+    
+    
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color:black;
+}
+.nav-button-container button {
+    padding:0.25rem 1rem;
+    border-radius:2rem;
+    background-color:var(--dark-purple);
+    border:none;
+    color:white;
+}
