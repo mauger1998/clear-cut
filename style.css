@@ -528,3 +528,38 @@ nav ul li a {
     background-color:var(--dark-purple);
     border:none;
 }
+
+.second-project-container img {
+    width:32rem;
+}
+.second-project-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row-reverse;
+    padding:9rem;
+    gap:6rem;
+}
+.second-project-right {
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    gap:1.5rem;
+    padding-bottom:1rem;
+}
+.second-project-right h3 {
+    font-size:2rem;
+}
+.second-project-right p {
+    font-size:1.25rem;
+    font-weight:200;
+}
+.second-project-right button {
+    padding:0.35rem 1.25rem;
+    font-size:1rem;
+    font-weight:600;
+    color:white;
+    background-color:var(--dark-purple);
+    border:none;
+}
