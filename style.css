@@ -446,12 +446,14 @@ nav ul li a {
 }
 .top-part-our-work {
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.left-side-top {
-    padding:2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     padding-left:9rem;
+}
+
+.left-side-top {
+    padding-block:2rem;
     display:flex;
     flex-direction: column;
     gap:1rem;
@@ -512,6 +514,7 @@ nav ul li a {
     justify-content: center;
     gap:1.5rem;
     padding-bottom:1rem;
+    max-width:70%;
 }
 .first-project-right h3 {
     font-size:2rem;
@@ -563,3 +566,69 @@ nav ul li a {
     background-color:var(--dark-purple);
     border:none;
 }
+@media (min-width:1490px) {
+    .first-project-container,
+    .second-project-container {
+        gap:14rem;
+    }
+    .first-project-container img,
+    .second-project-container img {
+        width:40rem;
+    }
+    .right-side-top p {
+        
+            width:85%;
+        
+    }
+}
+/*****************************/
+.about {
+    display:flex;
+    flex-direction:column;
+    padding:3rem;
+    padding-inline:9rem;
+    gap:15rem;
+}
+.rectangle {
+    width:325px;
+    
+}
+.what-we-do-section {
+    display:flex;
+}
+.what-we-do-left h2 {
+    font-size:2rem;
+}
+.what-we-do-left p {
+    font-weight:200;
+    max-width:70%;
+    line-height:2;
+}
+.what-we-do-left {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:1rem;
+}
+.what-we-do-left button {
+    padding:0.25rem 1rem;
+    background-color:var(--dark-purple);
+    color:white;
+    border:none;
+    width:7vw;
+    border-radius:0.75rem;
+}
+.about-images-container {
+    display:flex;
+    gap:3rem;
+}
+.about-img,
+.about-img-two {
+    width:38vw;
+    height:40rem
+}
+.about-img-two {
+    height:30rem;
+}
+
