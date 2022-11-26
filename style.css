@@ -327,6 +327,7 @@ nav ul li a {
     display:flex;
     justify-content: center;
     align-items: center;
+    font-size:1.15rem;
 }
 .statistics-container {
     width:90%;
