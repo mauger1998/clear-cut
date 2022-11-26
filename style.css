@@ -470,7 +470,8 @@ nav ul li a {
     gap:1rem;
     padding-right:4rem;
     line-height:1.75;
-    width:50%;
+    width:47.5%;
+    font-weight:200;
 }
 .buttons-our-work {
     display:flex;
@@ -478,12 +479,13 @@ nav ul li a {
 }
 .right-side-top button {
     padding: 0.3rem 1rem;
-    width:14rem;
+    width:14.5rem;
     background-color:var(--dark-purple);
     color:white;
     border:none;
     font-size:1rem;
     font-weight:600;
+    word-wrap: nowrap;
 }
 .right-side-top button:nth-child(2) {
     background-color:white;
@@ -492,4 +494,37 @@ nav ul li a {
 }
 .right-side-top p {
     width:100%;
+}
+.first-project-container img {
+    width:32rem;
+}
+.first-project-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:9rem;
+    gap:6rem;
+}
+.first-project-right {
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    gap:1.5rem;
+    padding-bottom:1rem;
+}
+.first-project-right h3 {
+    font-size:2rem;
+}
+.first-project-right p {
+    font-size:1.25rem;
+    font-weight:200;
+}
+.first-project-right button {
+    padding:0.35rem 1.25rem;
+    font-size:1rem;
+    font-weight:600;
+    color:white;
+    background-color:var(--dark-purple);
+    border:none;
 }
