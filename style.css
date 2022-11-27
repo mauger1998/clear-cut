@@ -442,9 +442,9 @@ nav ul li a {
 .our-work-section {
     margin-top:8rem;
     max-width:100rem;
+    
 }
 .wrapper-test {
-    border:2px solid red;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -517,19 +517,21 @@ nav ul li a {
     display:flex;
     flex-direction:column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
     gap:1rem;
     height:100%;
     padding:2rem;
     padding-right:4rem;
     grid-column:2 / span 1;
     grid-row: 3/span 1;
+    text-align:right;
     
 }
 .second-project-left {
     grid-column: 1/ span 1;
     place-self:start;
     align-self:center;
+    
 }
 .first-project-right h3,
 .second-project-right h3,
@@ -557,17 +559,30 @@ nav ul li a {
 .what-we-do-left {
     display:flex;
     flex-direction:column;
-    width:90%;
+    width:100%;
     justify-content: center;
     align-items: flex-start;
     gap:1rem;
+}.what-we-do-right {
+    place-self:end;
+}
+.first-project-left {
+    place-self:end;
+}
+@media (max-width:1194px) {
+    .first-project-right {
+        gap:0;
+    }
 }
 @media (max-width:1106px) {
     .our-work-section {
-        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr ;
         text-align:center;
         gap:5rem;
         
+    }
+    .first-project-right {
+        gap:1.5em;
     }
     
     .first-project-right,
@@ -575,28 +590,35 @@ nav ul li a {
     {
         justify-content: center;
         align-items: center;
+        text-align:center;
     
     }
     .what-we-do-right {
         align-self:flex-start;
+        
     }
     .first-project-right {
         grid-column:1 / span 2;
-        grid-row:3/ span 1;;
+        grid-row:3/ span 1;
+        padding:0;
+        
     }
     .first-project-left {
         grid-row: 2 / span 1;
-        grid-column:1 / span 2
+        grid-column:1 / span 2;
+        place-self:center;
     }
     .second-project-right {
         grid-column:1 / span 2;
-        grid-row:5 / span 1;;
+        grid-row:5 / span 1;
+        padding:0;
         
     }
     .second-project-left {
         grid-column:1 / span 2;
         grid-row:4 / span 1;
         place-self:center;
+        padding:0;
     }
     .what-we-do-left {
         grid-column: 1 / span 1;
@@ -607,6 +629,13 @@ nav ul li a {
     .what-we-do-right {
         grid-column: 2 / span 1;
         grid-row:6 / span 1;
+        place-self:center;
+    }
+    .top-part-our-work {
+        width:100%;
+    }
+    .first-project-right {
+        display:flex;
     }
 
 }
@@ -626,30 +655,69 @@ nav ul li a {
         margin:0;
         padding:0;
     }
+    
+    
 }
 
 /*****************************/
 .about {
-    display:flex;
-    flex-direction:column;
-    padding:3rem;
-    padding-inline:9rem;
-    gap:15rem;
-    border:2px solid black;
+    display:grid;
+    grid-template-columns :1fr;
+    place-items:center;
+    margin-top:10rem;
+    
 }
-
-
-
 .about-images-container {
-    display:flex;
-    gap:3rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    place-items:center;
+    width:100vw;
+    
 }
+
+
+
 .about-img,
 .about-img-two {
-    width:38vw;
-    height:40rem
+    width:30rem;
+    height:30rem
 }
 .about-img-two {
-    height:30rem;
+    height:25rem;
+    place-self:end;
 }
-
+.quote-wrapper {
+    place-self:start;
+    display:flex;
+    flex-direction: column;
+}
+.about-img {
+    align-self:start;
+}
+.quote {
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    padding-top:1rem;
+    font-size:2rem;
+    
+}
+.quote p {
+    font-size:max(1.25rem, 1.5vw);
+    padding-left:2rem;
+}
+.quote img {
+   
+    width:max(10vw, 150px)
+}
+.quote img:first-child {
+    transform:rotateY(180deg);
+   
+    
+}
+.quote img:last-child {
+    align-self:flex-end;
+    transform:rotateY(180deg);
+    
+}
