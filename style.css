@@ -30,6 +30,11 @@ main {
     height:1000vh;
     color:black;
     background-color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items:center;
+    gap:10rem;
 }
 /*****************************/
 header {
@@ -78,7 +83,7 @@ nav ul li a {
 /*********************/
 .hero-section {
     width:100vw;
-    height:200vh;
+    /* height:200vh; */
     display:flex;
     gap:1.5rem;
     flex-direction: column;
@@ -137,9 +142,9 @@ nav ul li a {
 
 /**********************/
 @media (max-width:1200px) {
-    .hero-section {
+    /* .hero-section {
         height:65rem;
-    }
+    } */
 }
 @media (max-width:704px) {
     .hero-wrapper h1:last-of-type {
@@ -156,7 +161,7 @@ nav ul li a {
         flex-direction: column-reverse;
     }
     .hero-section {
-        height:120vh;
+        /* height:120vh; */
         max-height:50rem;
     }
 }
@@ -173,7 +178,7 @@ nav ul li a {
 /***************************/
 .why-us {
     width:100vw;
-    height:100vh;
+    /* height:100vh; */
     text-align:center;
     display:flex;
     flex-direction: column;
@@ -509,8 +514,7 @@ nav ul li a {
     align-items: flex-start;
     gap:1rem;
     height:100%;
-    padding:2rem;
-    padding-right:4rem;
+    
     
 }
 .second-project-right {
@@ -520,8 +524,8 @@ nav ul li a {
     align-items: flex-end;
     gap:1rem;
     height:100%;
-    padding:2rem;
-    padding-right:4rem;
+    /* padding:2rem; */
+    
     grid-column:2 / span 1;
     grid-row: 3/span 1;
     text-align:right;
